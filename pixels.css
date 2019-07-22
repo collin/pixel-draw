@@ -1,0 +1,55 @@
+:root {
+  --ui-font: "Helvetica Neue";
+  font-family: var(--ui-font);
+  font-weight: 100;
+}
+#controls {
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+}
+#controller {
+  display: flex;
+  flex-direction: column;
+}
+#controller > button {
+  margin-bottom: .5rem;
+  padding: .25rem;
+  font-family: var(--ui-font);
+}
+#color-picker {
+  display: flex;
+}
+#color-picker > button {
+  width: 1rem;
+  height: 1rem;
+  overflow: hidden;
+  border: none;
+  margin: .25rem;
+  background: var(--pick-color);
+  color: var(--pick-color);
+}
+.pixel-container {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.pixel-container > div {
+  padding: 1rem;
+}
+.pixel-container h1 {
+  margin: .25rem;
+  font-weight: 100;
+}
+.pixel-row {
+  display: flex;
+}
+.pixel-cell {
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+}
+button.selected {
+  outline: 3px dashed hotpink;
+}

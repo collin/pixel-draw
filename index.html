@@ -1,0 +1,39 @@
+<!doctype HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ACME Pixels</title>
+    <script defer src="./pixels.js"></script>
+    <link rel="stylesheet" href="./pixels.css">
+  </head>
+
+  <body class="pixel-container">
+    <div id="controls">
+      <h1>Controls</h1>
+
+      <div id="controller">
+        <button data-action="addRow">Add A Row</button>
+        <button data-action="removeRow">Remove A Row</button>
+        <button data-action="addColumn">Add A Column</button>
+        <button data-action="removeColumn">Remove A Column</button>
+      </div>
+
+      <div id="color-picker">
+        <button data-color="red" style="--pick-color: red;">Red</button>
+        <button data-color="green" style="--pick-color: green;">Green</button>
+        <button data-color="blue" style="--pick-color: blue;">Blue</button>
+        <button data-color="orange" style="--pick-color: orange;">Orange</button>
+        <button data-color="white" style="--pick-color: white;">White</button>
+        <button data-color="black" style="--pick-color: black;">Black</button>
+        <button data-color="pink" style="--pick-color: pink;">Pink</button>
+      </div>
+    </div>
+
+    <div id="canvas">
+      <h1>Canvas</h1>
+      <div class="stage">
+      </div>
+    </div>
+
+  </body>
+</html>
